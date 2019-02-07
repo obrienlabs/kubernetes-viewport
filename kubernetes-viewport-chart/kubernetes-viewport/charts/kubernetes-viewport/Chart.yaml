@@ -13,6 +13,6 @@
 # limitations under the License.
 
 apiVersion: v1
-description: Logging reference demo node container - use with demo master
-name: logdemonode
+description: kubernetes viewport node container - use with demo master
+name: kubernetes-viewport
 version: 2.0.0

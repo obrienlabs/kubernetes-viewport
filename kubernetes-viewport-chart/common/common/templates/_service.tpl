@@ -1,4 +1,5 @@
-# Copyright © 2018 Amdocs, Bell Canada
+{{/*
+# Copyright © 2017 Amdocs, Bell Canada
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,8 +12,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+*/}}
 
-apiVersion: v1
-description: kubernetes viewport node container - use with demo master
-name: kubernetes-viewport
-version: 2.0.0
+{{/*
+  Resolve the name of a chart's service.
+
+  The default will be the chart name, unless
+  overridden in the service configuration.
+
+  - .Values.service.name  : override default service (ie. chart) name
+*/}}
+{{/*
+  Expand the service name for a chart.
+*/}}
+{{- define "common.servicename" -}}
+  {{- default .Chart.Name .Values.service.name | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
