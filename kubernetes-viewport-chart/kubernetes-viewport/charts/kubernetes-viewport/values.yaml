@@ -23,7 +23,7 @@ global:
 # Application configuration defaults.
 #################################################################
 repository: oomk8s
-image: kubernetes-viewport-service:0.0.1
+image: kubernetes-viewport:0.0.1
 pullPolicy: Always
 
 # flag to enable debugging - application support required
@@ -66,7 +66,7 @@ service:
   type: NodePort
   externalPort: 8080
   internalPort: 8080
-  nodePort: 01
+  nodePort: 11
   # optional port name override - default can be defined in service.yaml
   #portName: http
 
