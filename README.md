@@ -15,5 +15,11 @@ Code developed as a HEAT based demo in July 2017 in
 Code developed over the years for the Heartrate iOS app backend/js/canvas code in 
 
   https://github.com/obrienlabs/biometric
+  
+ URIs
+  Dashboard : http://ons.onap.info:30511/kubernetes-viewport
+  
+ API
+  http://ons.onap.info:30511/kubernetes-viewport/rest/health/health
 
 

@@ -22,11 +22,11 @@
 
 mkdir target
 cp ../kubernetes-viewport-service/target/*.war target
-docker build -t oomk8s/kubernetes-viewport -f DockerFile .
+docker build -t obrienlabs/kubernetes-viewport -f DockerFile .
 docker images | grep kubernetes-viewport
-docker tag oomk8s/kubernetes-viewport oomk8s/kubernetes-viewport:0.0.1
+docker tag obrienlabs/kubernetes-viewport oomk8s/kubernetes-viewport:0.0.1
 docker login
-docker push oomk8s/kubernetes-viewport:0.0.1
+docker push obrienlabs/kubernetes-viewport:0.0.1
 
 #docker stop kubernetes-viewport
 #docker image rm oomk8s/kubernetes-viewport
