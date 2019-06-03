@@ -2,7 +2,7 @@
 Helm/Kubernetes viewport for multicluster monitoring
 
 # Project
-A conglomeration of helm/chart code from ONAP (Bell and Amdocs)
+A conglomeration of helm/chart code - some template code is from ONAP (Bell and Amdocs )
 
   https://git.onap.org/oom/tree/kubernetes/onap
 
